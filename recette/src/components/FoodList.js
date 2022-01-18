@@ -11,7 +11,7 @@ function FoodList() {
         <div>
             <div className ='mainHeader' align='center'>
                 <h1 className='headingOne'>Recette</h1>
-                <Button variant='primary' onClick={handleShow}>Add Item</Button>
+                <Button variant='outline-dark' onClick={handleShow}>Add Item</Button>
                 <div>
                   <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
@@ -30,10 +30,10 @@ function FoodList() {
                       </form>
                     </Modal.Body>
                     <Modal.Footer>
-                      <Button variant="secondary" onClick={handleClose}>
+                      <Button variant="outline-secondary" onClick={handleClose}>
                         Close
                       </Button>
-                      <Button variant="primary" onClick={handleClose}>
+                      <Button variant="outline-dark" onClick={handleClose}>
                         Save Changes
                       </Button>
                     </Modal.Footer>
