@@ -10,7 +10,7 @@ function FoodList() {
     return (
         <div>
             <div className ='mainHeader' align='center'>
-                <h1 className='headingOne'>RECETTE</h1>
+                <h1 className='headingOne'>Recette</h1>
                 <Button variant='primary' onClick={handleShow}>Add Item</Button>
                 <div>
                   <Modal show={show} onHide={handleClose}>
