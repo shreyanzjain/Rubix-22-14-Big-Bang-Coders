@@ -1,9 +1,13 @@
 .mainHeader {
   background-color: rgb(210, 255, 240);
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding:50px;
 }
 
 .headingOne {
   background-color: rgb(210, 255, 240);
+}
+
+.recommend  {
+  background-color:rgb(210, 255, 240);
+  padding: 50px;
 }
