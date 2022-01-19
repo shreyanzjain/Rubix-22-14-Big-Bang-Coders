@@ -4,9 +4,9 @@ import { Modal, Button} from 'react-bootstrap';
 const CreateTask = ({show, toggle, save}) => {
     const [taskName, setTaskName] = useState('');
     const [description, setDescription] = useState('');
-    const [days, setDays] = useState(0);
-    const [week, setWeek] = useState(0);
-    const [month, setMonth] = useState(0);
+    const [days, setDays] = useState('0');
+    const [week, setWeek] = useState('0');
+    const [month, setMonth] = useState('0');
 
     const handleChange = (e) => {
         const {name, value} = e.target;

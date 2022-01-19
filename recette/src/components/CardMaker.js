@@ -5,7 +5,6 @@ function CardMaker({taskObj, index, deleteTask}) {
     const handleDelete = () =>   {
         deleteTask(index)
     }
-
     return (
         <div>
             <Card style={{ width: '100%', height: '10rem' }} align='left'>
