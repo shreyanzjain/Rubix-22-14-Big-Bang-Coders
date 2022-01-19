@@ -4,10 +4,20 @@
 }
 
 .headingOne {
+  margin-top: 50px;
   background-color: rgb(210, 255, 240);
 }
 
 .recommend  {
   background-color:rgb(210, 255, 240);
   padding: 50px;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(108, 177, 255);
+}
+
+.footer :hover  {
+  color: rgb(108, 177, 255);
 }

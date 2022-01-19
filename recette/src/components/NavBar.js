@@ -4,7 +4,7 @@ import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 function NavBar() {
     return (
         <div>
-            <Navbar bg="light" expand="lg" sticky='top'>
+            <Navbar bg="light" expand="lg" fixed='top'>
               <Container>
                 <Navbar.Brand href="#home">Recette</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
