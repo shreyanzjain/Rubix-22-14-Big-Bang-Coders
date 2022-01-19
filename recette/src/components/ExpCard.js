@@ -24,7 +24,6 @@ function ExpCard({taskObj, index, deleteTask}) {
         }
     } else{
         return (<div>
-        
     </div>);
     }
     
