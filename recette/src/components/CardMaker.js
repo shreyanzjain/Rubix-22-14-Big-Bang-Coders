@@ -8,11 +8,15 @@ function CardMaker({taskObj}) {
             <Card.Body>
                 <Card.Title>{taskObj.Name}</Card.Title>
                 <Card.Text>{taskObj.Description}</Card.Text>
-                <div>
-                    <Button variant="outline-dark">Edit</Button>
-                    <Button variant="outline-dark">Delete</Button>
-                </div>
             </Card.Body>
+            <Card.Footer>
+            <div>
+                <span class='m-1'>
+                <Button variant="outline-dark">Edit</Button>
+                </span>
+                <Button variant="outline-dark">Delete</Button>
+            </div>
+            </Card.Footer>
             </Card>
         </div>
     )
