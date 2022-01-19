@@ -37,13 +37,6 @@ function FoodList() {
         window.location.reload()
     }
 
-    const updateListArray = (obj, index) => {
-        let tempList = taskList
-        tempList[index] = obj
-        localStorage.setItem("taskList", JSON.stringify(tempList))
-        setTaskList(tempList)
-        window.location.reload()
-    }
 
     return (
         <div>
@@ -55,10 +48,10 @@ function FoodList() {
                 <CreateTask toggle={toggle} show={show} save={saveTask}/>
             </div>
             <div className="task-container">
-                {taskList && taskList.map((obj, index) => <CardMaker taskObj = {obj} index ={index} deleteTask ={deleteTask} updateListArray={updateListArray}/>)}
+                {taskList && taskList.map((obj, index) => <CardMaker taskObj = {obj} index ={index} deleteTask ={deleteTask}/>)}
             </div>
             <div>
-              <h1 className='recommend' id='343' align='center'>Recommended.</h1>
+              <h1 className='recommend' id='343' align='center'>About to expire.</h1>
             </div>
        </div>
     )
