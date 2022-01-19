@@ -6,8 +6,6 @@ function CardMaker({taskObj, index, deleteTask}) {
         deleteTask(index)
     }
 
-    var dayCount
-
     return (
         <div>
             <Card style={{ width: '100%', height: '10rem' }} align='center'>

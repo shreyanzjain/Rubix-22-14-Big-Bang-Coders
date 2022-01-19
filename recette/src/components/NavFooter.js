@@ -1,7 +1,4 @@
-import React from 'react'
-const navTop = () =>    {
-    <a href='#666'/>
-}
+import React from 'react';
 
 function NavFooter() {
     return (

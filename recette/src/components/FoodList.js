@@ -3,6 +3,8 @@ import {Button} from 'react-bootstrap';
 import CreateTask from './CreateTask';
 import CardMaker from './CardMaker';
 
+
+
 function FoodList() {
     const [show, setShow] = useState(false);
 
@@ -48,7 +50,9 @@ function FoodList() {
                 <CreateTask toggle={toggle} show={show} save={saveTask}/>
             </div>
             <div className="task-container">
+                
                 {taskList && taskList.map((obj, index) => <CardMaker taskObj = {obj} index ={index} deleteTask ={deleteTask}/>)}
+                
             </div>
             <div>
               <h1 className='recommend' id='343' align='center'>About to expire.</h1>
