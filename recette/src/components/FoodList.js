@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Button} from 'react-bootstrap';
 import CreateTask from './CreateTask';
 import CardMaker from './CardMaker';
+import ExpCard from './ExpCard';
 
 
 
@@ -36,7 +37,7 @@ function FoodList() {
         tempList.splice(index, 1)
         localStorage.setItem("taskList", JSON.stringify(tempList))
         setTaskList(tempList)
-        window.location.reload()
+        window.top.location.reload()
     }
 
 
@@ -56,6 +57,11 @@ function FoodList() {
             </div>
             <div>
               <h1 className='recommend' id='343' align='center'>About to expire.</h1>
+            </div>
+            <div className="task-container">
+                
+                {taskList && taskList.map((obj, index) => <ExpCard taskObj = {obj} index ={index} deleteTask ={deleteTask}/>)}
+                
             </div>
        </div>
     )

@@ -10,6 +10,7 @@
 .recommend  {
   background-color:rgb(210, 255, 240);
   padding: 50px;
+  margin-bottom: 0%;
 }
 
 .footer {
@@ -27,9 +28,4 @@
 
 .bg-emerald-300 {
   background-color:rgb(210, 255, 240);
-}
-
-.zz665  {
-  height: 100%;
-  width: 100%;
 }
