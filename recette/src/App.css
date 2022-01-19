@@ -4,7 +4,6 @@
 }
 
 .headingOne {
-  margin-top: 50px;
   background-color: rgb(210, 255, 240);
 }
 
@@ -20,4 +19,12 @@
 
 .footer :hover  {
   color: rgb(108, 177, 255);
+}
+
+.bg-emerald-400 {
+  background-color:rgb(109, 255, 206);
+}
+
+.bg-emerald-300 {
+  background-color:rgb(210, 255, 240);
 }
