@@ -9,10 +9,10 @@ function ExpCard({taskObj, index, deleteTask}) {
     let week = parseInt(taskObj.Week);
     let month = parseInt(taskObj.Month);
 
-    if(day < 7 && week === 0 && month === 0)    {
+    if(day < 7 && week === 0 && month === 0 && day > 0)    {
         return  (
             <div>
-            <Card style={{ width: '100%', height: '10rem' }} align='left'>
+            <Card style={{ width: '100%', height: '10rem' }} align='left' bg='warning' text='light'>
             <Card.Body>
                 <Card.Title>{taskObj.Name}</Card.Title>
                 <Card.Subtitle>{taskObj.Description}</Card.Subtitle>
@@ -20,7 +20,7 @@ function ExpCard({taskObj, index, deleteTask}) {
             </Card.Body>
             <Card.Footer>
             <div>
-                <Button variant="outline-dark float-right" onClick={handleDelete}>Delete</Button>
+                <Button variant="outline-light float-right" onClick={handleDelete}>Delete</Button>
             </div>
             </Card.Footer>
             </Card>
