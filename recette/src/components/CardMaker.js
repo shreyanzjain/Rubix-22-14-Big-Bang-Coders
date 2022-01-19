@@ -1,7 +1,12 @@
-import React from 'react'
+import React , {useState} from 'react'
 import {Button, Card} from 'react-bootstrap'
 
-function CardMaker({taskObj}) {
+function CardMaker({taskObj, index, deleteTask, updateListArray}) {
+    const [modal, setModal] = useState(false);
+    const handleDelete = () =>   {
+        deleteTask(index)
+    }
+
     return (
         <div>
             <Card style={{ width: '100%', height: '10rem' }} align='center'>
@@ -11,10 +16,7 @@ function CardMaker({taskObj}) {
             </Card.Body>
             <Card.Footer>
             <div>
-                <span class='m-1'>
-                <Button variant="outline-dark">Edit</Button>
-                </span>
-                <Button variant="outline-dark">Delete</Button>
+                <Button variant="outline-dark" onClick={handleDelete}>Delete</Button>
             </div>
             </Card.Footer>
             </Card>

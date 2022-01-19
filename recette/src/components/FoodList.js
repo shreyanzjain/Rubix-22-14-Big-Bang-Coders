@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Button, Modal} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 import CreateTask from './CreateTask';
 import CardMaker from './CardMaker';
 
@@ -29,6 +29,22 @@ function FoodList() {
         setTaskList(tempList);
     }
 
+    const deleteTask = (index) =>    {
+        let tempList = taskList;
+        tempList.splice(index, 1)
+        localStorage.setItem("taskList", JSON.stringify(tempList))
+        setTaskList(tempList)
+        window.location.reload()
+    }
+
+    const updateListArray = (obj, index) => {
+        let tempList = taskList
+        tempList[index] = obj
+        localStorage.setItem("taskList", JSON.stringify(tempList))
+        setTaskList(tempList)
+        window.location.reload()
+    }
+
     return (
         <div>
             <div className ='mainHeader' align='center' id='666'>
@@ -39,7 +55,7 @@ function FoodList() {
                 <CreateTask toggle={toggle} show={show} save={saveTask}/>
             </div>
             <div className="task-container">
-                {taskList && taskList.map((obj) => <CardMaker taskObj = {obj}/>)}
+                {taskList && taskList.map((obj, index) => <CardMaker taskObj = {obj} index ={index} deleteTask ={deleteTask} updateListArray={updateListArray}/>)}
             </div>
             <div>
               <h1 className='recommend' id='343' align='center'>Recommended.</h1>

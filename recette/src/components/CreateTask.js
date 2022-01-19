@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, DropdownButton, Dropdown} from 'react-bootstrap';
 
 const CreateTask = ({show, toggle, save}) => {
     const [taskName, setTaskName] = useState('');
@@ -37,6 +37,12 @@ const CreateTask = ({show, toggle, save}) => {
                 <div className='form-group'>
                     <label>Description</label>
                     <textarea rows='5' className='form-control' value={description} name='description' onChange={handleChange}/>
+                </div>
+                <br/>
+                <div>
+                <span>
+                    <input type='number' title='Days' width='50px'></input>
+                </span>
                 </div>
             </Modal.Body>
             <Modal.Footer>
